@@ -1,0 +1,23 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+images:
+  - name: us-docker.pkg.dev/se-gcp-401111/grade-demo/grade-submission-api
+    newTag: dev-latest
+
+namePrefix: prod-
+nameSuffix: ""
+
+patches:
+  - path: replicas-patch.yaml
+    target:
+      kind: Deployment
+      name: grade-submission-api
+  
+  - path: backendconfig-annotation-patch.yaml
+    target:
+      kind: Service
+      name: grade-submission-api
