@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/avatala/argocd-kubernetes-gitops-tutorial
+    repoURL: https://github.com/avatala/kubernetes-cd
     targetRevision: HEAD
     path: kustomize/overlays/prod
   destination:
