@@ -3,7 +3,7 @@ kind: Kustomization
 
 images:
   - name: us-central1-docker.pkg.dev/se-gcp-401111/whereami/whereami
-    newTag: 
+    newTag: 069820be29cf4d897c8bad8e0d34fee3647d82cc
 
 resources:
   - ../../base
