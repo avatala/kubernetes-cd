@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: store-cluster2
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/avatala/kubernetes-cd
+    targetRevision: main
+    path: kustomize-apps/store/overlays/dev/cluster2
+
+  destination:
+    server: https://cluster2-api
+    namespace: store
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
