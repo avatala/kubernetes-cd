@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 images:
-  - name: us-central1-docker.pkg.dev/se-gcp-401111/grade-demo/grade-submission-api
+  - name: us-central1-docker.pkg.dev/se-gcp-401111/whereami/whereami
     newTag: 
 
 resources:
