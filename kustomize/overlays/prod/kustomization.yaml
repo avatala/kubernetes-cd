@@ -6,7 +6,7 @@ resources:
 
 images:
   - name: us-docker.pkg.dev/se-gcp-401111/grade-demo/grade-submission-api
-    newTag: 0e0aff14b5335403137a3260350de96a94258efe
+    newTag: 750da244b42ff80ad906c9bc63d7fe825bafd9cd
 
 namePrefix: prod-
 nameSuffix: ""
