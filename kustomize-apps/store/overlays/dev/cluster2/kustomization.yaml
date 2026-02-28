@@ -6,7 +6,7 @@ images:
     newTag: 913c387738064321e0b373270dd39c2d3c96a42c
 
 resources:
-  - ../../base
+  - ../../../base
   - west2-service.yaml
 
 patches:
