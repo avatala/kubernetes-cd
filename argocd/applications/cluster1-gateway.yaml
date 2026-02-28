@@ -12,7 +12,7 @@ spec:
     path: kustomize-apps/gateway/overlays/dev/cluster1
 
   destination:
-    server: https://cluster1-api
+    server: https://kubernetes.default.svc
     namespace: store
 
   syncPolicy:

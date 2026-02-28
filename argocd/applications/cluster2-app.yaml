@@ -12,7 +12,7 @@ spec:
     path: kustomize-apps/store/overlays/dev/cluster2
 
   destination:
-    server: https://cluster2-api
+    server: https://10.20.0.18
     namespace: store
 
   syncPolicy:
